@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1120" />
+  <title>About</title>
+  <meta name="description" content="Tentang Aether Studio: visi, misi, dan pendekatan kami." />
+  <link rel="icon" type="image/x-icon" href="/asset/img/icon.png">
+  <link rel="stylesheet" href="../asset/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <canvas id="bg-stars" aria-hidden="true"></canvas>
+    <div class="cursor-dot"></div>
+    <div id="scroll-progress"></div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html#home" class="brand" aria-label="Aether Studio Home">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" class="brand-mark">
+            <path class="brand-stroke" d="M12 2l9 20h-4l-1.9-4.5H8.9L7 22H3L12 2zm0 6.3L10 12h4l-2-3.7z"></path>
+            <path class="brand-fill"   d="M12 2l9 20h-4l-1.9-4.5H8.9L7 22H3L12 2zm0 6.3L10 12h4l-2-3.7z"></path>
+        </svg>
+        <span class="brand-name">Aether Studio</span>
+        </a>
+      <div class="nav-menu">
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#services" class="nav-link">Services</a>
+        <a href="../index.html#team" class="nav-link">Team</a>
+        <a href="../index.html#contact" class="nav-link">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container" style="padding-block:56px">
+      <h1 class="glow">About Aether Studio</h1>
+      <p style="max-width:760px">Kami studio kecil yang fokus ke <strong>Web</strong>, <strong>AI</strong>, dan <strong>Game</strong> - sesekali aplikasi desktop. Kami menggabungkan desain modern, performa, dan otomasi untuk bikin produk yang terasa cepat, rapi, dan menyenangkan dipakai.</p>
+    </section>
+
+    <section class="container" style="padding-block:24px">
+      <div class="grid-12" style="display:grid;grid-template-columns:repeat(12,1fr);gap:18px">
+        <article class="card" style="grid-column:span 6;border:1px solid var(--border);background:var(--card);border-radius:var(--radius);padding:18px">
+          <h2>Visi</h2>
+          <p>Membawa pengalaman digital yang cepat, aman, dan estetik ke bisnis & komunitas.</p>
+        </article>
+        <article class="card" style="grid-column:span 6;border:1px solid var(--border);background:var(--card);border-radius:var(--radius);padding:18px">
+          <h2>Misi</h2>
+          <ul>
+            <li>Merancang UI/UX modern dengan animasi halus.</li>
+            <li>Mengintegrasikan AI (on-device / private) untuk automasi yang aman.</li>
+            <li>Menjaga performa, aksesibilitas, dan maintainability.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" style="padding-block:24px">
+      <h2>Nilai & Pendekatan</h2>
+      <ul>
+        <li><strong>Craft</strong>: detail kecil = pengalaman besar.</li>
+        <li><strong>Private-first</strong>: utamakan data lokal & keamanan.</li>
+        <li><strong>Deliver</strong>: iterasi cepat, transparan.</li>
+      </ul>
+    </section>
+
+    <section class="container" style="padding-block:24px">
+      <h2>Tech Stack</h2>
+      <ul class="stack-badges">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li>
+        <li>Python</li><li>Unity C#</li><li>Ollama/GGUF</li><li>Git</li>
+      </ul>
+    </section>
+
+    <section class="container" style="padding-block:24px">
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="butto butto-primary" href="../index.html#contact">Ayo Kolaborasi</a>
+        <a class="butto butto-ghost" href="mailto:rahmataditya2817@gmail.com">Email Kami</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+  <div class="footer-container container">
+    
+    <div class="footer-brand">
+      <svg class="footer-logo" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2l9 20h-4l-1.9-4.5H8.9L7 22H3L12 2zm0 6.3L10 12h4l-2-3.7z" fill="#00A8FF"/>
+      </svg>
+      <span class="footer-name">Aether Studio</span>
+    </div>
+
+    <div class="footer-links">
+  <a href="../legal/privacy.html">Privacy Policy</a>
+  <a href="../legal/terms.html">Terms of Service</a>
+  <a href="../legal/about.html">About</a>
+</div>
+
+    <div class="footer-social">
+      <a href="https://github.com/rillToMe" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://instagram.com/rill_lyrics" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+  </div>
+
+    <div class="footer-bottom">
+        <small>&copy; <span id="year"></span> Aether Studio - All Rights Reserved.</small>
+    </div>
+    </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="../asset/js/app.js" defer></script>
+
+   <button id="to-top" class="to-top" aria-label="Kembali ke atas">
+  <svg class="ico ico-arrow" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+    <path fill="currentColor" d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z"/>
+  </svg>
+  <svg class="ico ico-rocket" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+    <path fill="currentColor" d="M12 2c2.8 0 5 2.2 5 5 0 3.9-2.8 7.8-5 10.5-2.2-2.7-5-6.6-5-10.5 0-2.8 2.2-5 5-5zm0 3a2 2 0 100 4 2 2 0 000-4z"/>
+    <path fill="currentColor" d="M7.5 14.5L6 19l4.5-1.5M16.5 14.5L18 19l-4.5-1.5"/>
+  </svg>
+</button>
+
+</body>
+</html>
