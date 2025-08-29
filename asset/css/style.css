@@ -1082,3 +1082,47 @@ textarea { resize: vertical; min-height: 120px; }
   .brand-stroke{ animation: none; stroke-dashoffset: 0; }
   .brand-fill{ animation: none; opacity: 1; }
 }
+
+@media (max-width: 640px){
+  .hero-preview{
+    aspect-ratio: 16 / 10;     
+    max-height: 260px;         
+  }
+  .hero-card{
+    padding: 14px;
+  }
+  .hero-card h3{
+    font-size: 18px;
+  }
+  .hero-card p{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 640px){
+  .hero-tags{
+    display: flex;              
+    flex-wrap: wrap;            
+    justify-content: center;   
+    gap: 8px 10px;
+    padding: 0;
+    margin: 14px 0 0;
+  }
+  .hero-tags li{
+    flex: 0 0 calc(1% - 10px);  
+    display: grid; place-items: center; 
+    text-align: center;
+    white-space: nowrap;         
+    font-size: 12px;          
+    padding: 6px 8px;            
+  }
+}
+
+@media (max-width: 360px){
+  .hero-tags li{
+    font-size: 11.5px;
+    padding: 6px 6px;
+  }
+}
